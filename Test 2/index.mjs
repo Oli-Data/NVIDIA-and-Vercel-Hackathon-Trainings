@@ -23,8 +23,9 @@ async function main() {
 
     console.log("RAW:", JSON.stringify(resp, null, 2));
     console.log("Nemotron says:", resp.choices[0]?.message?.content ?? "(no content)");
-
-    } catch (err){
+    } 
+    
+    catch (err){
         console.error("Error:", err);
     }
 }
